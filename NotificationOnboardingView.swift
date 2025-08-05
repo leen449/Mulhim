@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct NotificationOnboardingView: View {
+    var onComplete: (() -> Void)? = nil // Optional completion action
+    
     var body: some View {
         VStack(spacing: 24) {
             // العنوان الرئيسي
@@ -24,7 +26,7 @@ struct NotificationOnboardingView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
 
             // صورة توضيحية
-            Image("pic1")
+            Image("")
                 .resizable()
                 .scaledToFit()
                 .frame(height: 200)
@@ -43,7 +45,7 @@ struct NotificationOnboardingView: View {
 
                     VStack(alignment: .leading, spacing: 4) {
                         HStack {
-                            Image("MulhemNoti")
+                            Image("Logo")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 20, height: 20)
@@ -95,11 +97,12 @@ struct NotificationOnboardingView: View {
                 }
             }
 
+            
             Spacer()
 
             // زر البدء
             Button(action: {
-                // الإجراء عند الضغط على Get Started
+                onComplete?() // Call completion action when Get Started is pressed
             }) {
                 HStack(spacing: 16) {
                     Text("Get Started")
