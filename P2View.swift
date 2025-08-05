@@ -1,3 +1,11 @@
+//
+//  P2View.swift
+//  Mulhim2
+//
+//  Created by leen binmueqal on 11/02/1447 AH.
+//
+
+
 import SwiftUI
 
 struct P2View: View {
