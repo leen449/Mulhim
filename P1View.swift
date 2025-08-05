@@ -1,5 +1,6 @@
 import SwiftUI
 
+
 // MARK: - شكل الخلفية المقصوصة
 /// شكل مخصص لإنشاء خلفية مستطيلة مقصوصة من الأعلى والأسفل
 struct RoundedRectangleShape: Shape {
@@ -119,7 +120,7 @@ extension P1View {
                 .padding(.horizontal, 0) // تغطية كاملة للجانبين
 
             // شعار التطبيق
-            Image("MulhemLogo")
+            Image("MulhimText")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 180)
@@ -177,6 +178,7 @@ extension P1View {
 // MARK: - معاينة التصميم
 #Preview {
     P1View(nextAction: {
-        print("تم الضغط على زر التالي")
-    })
+            print("تم الضغط على زر التالي")
+        })
 }
+
