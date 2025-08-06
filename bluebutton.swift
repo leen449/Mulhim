@@ -141,7 +141,7 @@ struct BlueButton: View {
                     .offset(x: -100, y: 20)
                     
                 //breathee
-                
+                                breathe()
                 
                     trynow()
                     .padding(30)
