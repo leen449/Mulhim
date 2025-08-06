@@ -1,3 +1,5 @@
+
+
 import SwiftUI
 
 struct NotificationOnboardingView: View {
@@ -26,7 +28,7 @@ struct NotificationOnboardingView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
 
             // صورة توضيحية
-            Image("")
+            Image("Pasted Graphic 2")
                 .resizable()
                 .scaledToFit()
                 .frame(height: 200)
@@ -35,21 +37,16 @@ struct NotificationOnboardingView: View {
             ZStack {
                 RoundedRectangle(cornerRadius: 20)
                     .fill(Color(red: 0.31, green: 0.24, blue: 0.19))
-                    .frame(width: 298, height: 52.69)
+                    .frame(width: 300, height: 52.69)
 
                 HStack(spacing: 12) {
-                    Rectangle()
-                        .fill(Color(red: 0.50, green: 0.23, blue: 0.27).opacity(0.50))
-                        .frame(width: 34.61, height: 32.90)
-                        .cornerRadius(8)
-
+                    
                     VStack(alignment: .leading, spacing: 4) {
                         HStack {
-                            Image("Logo")
+                            Image("logo 1")
                                 .resizable()
-                                .scaledToFit()
-                                .frame(width: 20, height: 20)
-                                .cornerRadius(4)
+                                .scaledToFit()                       .frame(width: 30, height: 30)
+                                        .cornerRadius(4)
                             
                             Text("Mulhem")
                                 .font(.custom("SF Pro", size: 12.35).weight(.medium))
@@ -67,7 +64,7 @@ struct NotificationOnboardingView: View {
 
                     Spacer()
                 }
-                .padding(.horizontal, 12)
+                .padding(.horizontal, 50.0)
             }
 
             // أزرار التفعيل أو التأجيل
@@ -97,7 +94,6 @@ struct NotificationOnboardingView: View {
                 }
             }
 
-            
             Spacer()
 
             // زر البدء
@@ -125,3 +121,4 @@ struct NotificationOnboardingView: View {
 #Preview {
     NotificationOnboardingView()
 }
+    
