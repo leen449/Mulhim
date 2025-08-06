@@ -63,21 +63,7 @@ struct OnboardingCoordinator: View {
     
     private var mainAppView: some View {
         VStack {
-            Text("🎉 Welcome to Mulhem!")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .foregroundColor(Color(red: 0.30, green: 0.16, blue: 0))
-            
-            Text("Your onboarding is complete!")
-                .font(.title2)
-                .foregroundColor(.gray)
-                .padding()
-            
-            // Here you can add your main app content
-            // For now, just showing a placeholder
-            Text("Main App Content Goes Here")
-                .font(.headline)
-                .padding()
+            BlueButton()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.white)
