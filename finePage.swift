@@ -125,7 +125,7 @@ struct finePage: View {
                         
                         ZStack {
                             RoundedRectangle(cornerRadius: 20)
-                                .fill(Color(hue: 0.546, saturation: 0.281, brightness: 0.998))
+                                .fill(Color("chatColor"))
                             Text(AIResponse)
                                 .multilineTextAlignment(.center)
                                 .padding()
@@ -135,7 +135,7 @@ struct finePage: View {
                     .padding(.horizontal)
                     .transition(.opacity)
                     .animation(.easeInOut(duration: 0.5), value: AIResponse)
-                }
+                    .padding(.bottom)                }
                 
                 if !userInput.isEmpty && !AIResponse2.isEmpty {
                     HStack(alignment: .top, spacing: 10) {
@@ -147,7 +147,7 @@ struct finePage: View {
                         
                         ZStack {
                             RoundedRectangle(cornerRadius: 20)
-                                .fill(Color(hue: 0.546, saturation: 0.281, brightness: 0.998))
+                                .fill(Color("chatColor"))
                             Text(AIResponse2)
                                 .multilineTextAlignment(.center)
                                 .padding()
@@ -157,6 +157,7 @@ struct finePage: View {
                     .padding(.horizontal)
                     .transition(.opacity)
                     .animation(.easeInOut(duration: 0.5), value: AIResponse2)
+                    .padding(.bottom)
                 }
                 
                 Spacer()
@@ -172,7 +173,7 @@ struct finePage: View {
                     .frame(width: 161, height: 44)
                     .background(
                         RoundedRectangle(cornerRadius: 17)
-                            .fill(Color(hue: 0.546, saturation: 0.281, brightness: 0.998))
+                            .fill(Color("chatColor"))
                     )
                     .overlay(
                         RoundedRectangle(cornerRadius: 17)
